@@ -15,7 +15,7 @@ The challenge of accurately classifying road signs poses a complex task in compu
 
 Existing methods for road sign classification often encounter accuracy and robustness limitations, which can lead to errors in practical applications like autonomous driving, traffic management, and navigation systems. Addressing these challenges is crucial to ensure the reliable and precise interpretation of road signs for enhanced safety and efficiency on roadways. 
 
-3. Use case digram
+3. Use case diagram
 <img width="445" alt="image" src="https://github.com/KSithole9/ROAD-SIGN-CLASSIFICATION/assets/152675019/78323397-466d-48ee-98d4-caf227a34b38">
 
 Mobile cameras are utilized in the traffic sign classification ecosystem to capture pictures of road signs, which serve as crucial input for convolutional neural network models that have been trained. These models use image analysis to predict traffic signs, which helps self-driving cars make well-informed decisions. These predictions are used by autonomous cars to read traffic signs and react to them, improving road safety and efficiency. Moreover, enhanced awareness of traffic signs by human drivers enhances road safety in general. These players work together to create a dynamic system that encourages safer and more effective and efficient transportation. 
