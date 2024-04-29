@@ -32,14 +32,19 @@ Dataset Name: GTSRB (German Traffic Sign Recognition Benchmark)
 Number of Classes: Originally, the dataset contains more than 43 classes of traffic signs. 
 
 Total Number of Images: The dataset comprises more than 50,000 images in total. 
+
 ![image](https://github.com/KSithole9/ROAD-SIGN-CLASSIFICATION/assets/152675019/d5758029-b642-4aa6-bb66-2e8b6f2ac849)
+
 Data Preprocessing: 
 
 Class Reduction: While the original dataset contains over 43 classes, we opted to focus on a subset of 24 classes for our specific task. 
 
 Class Imbalance Handling: The dataset was initially imbalanced, with different numbers of samples for each class. To address this, we balanced the dataset by resampling the classes to have 200 samples each. 
+
 ![image](https://github.com/KSithole9/ROAD-SIGN-CLASSIFICATION/assets/152675019/f6bc9118-19c2-4769-8144-f1f744dee801)
+
 Dataset Download Link: The dataset can be downloaded from the following lnk: https://www.kaggle.com/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign 
+
 By selecting a subset of classes and balancing the dataset, we aimed to create a more manageable and evenly distributed dataset for training our models. 
 
 We obtained the dataset from an archive containing images of traffic signs along with corresponding labels. The dataset includes various classes of traffic signs, such as speed limits, no passing zones, and caution signs. We preprocessed the data by extracting images from the archive, filtering out classes not of interest, and balancing the training data to ensure each class has sufficient representation. 
@@ -53,18 +58,27 @@ We trained each model using balanced training data and evaluated their performan
 5. Custom CNN Model: 
 
 We constructed a custom CNN architecture consisting of convolutional layers followed by max-pooling layers. The model includes three convolutional layers with increasing filter sizes and a fully connected layer with 128 units. The output layer has 24 units corresponding to the 24 traffic sign classes. 
+
 ![image](https://github.com/KSithole9/ROAD-SIGN-CLASSIFICATION/assets/152675019/0b218e52-74e9-4733-ab91-a7e498e2ef0c)
+
 ![image](https://github.com/KSithole9/ROAD-SIGN-CLASSIFICATION/assets/152675019/369976e0-9fc6-4fc9-89e2-beedfe587e3d)
+
 5.2 Transfer Learning with ResNet50: 
+
 
 We utilized transfer learning with ResNet50, a deep residual network pre-trained on ImageNet data. We fine-tuned the ResNet50 model by adding custom top layers and training them along with the pre-trained base layers. 
 
 ![image](https://github.com/KSithole9/ROAD-SIGN-CLASSIFICATION/assets/152675019/a8a680ec-b393-4986-b130-54db2d0740fd)
 ![image](https://github.com/KSithole9/ROAD-SIGN-CLASSIFICATION/assets/152675019/abb3c2be-8a6c-4d86-99d3-f5c45f788757)
+
 5.3 Transfer Learning with VGG16: 
+
 Transfer learning with VGG16, another pre-trained model on ImageNet, was employed similarly. We froze most of the VGG16 layers and added custom top layers to adapt the model to our traffic sign classification task. 
+
 ![image](https://github.com/KSithole9/ROAD-SIGN-CLASSIFICATION/assets/152675019/174a3a27-9062-4aa8-beab-9e0b550ebdbf)
 ![image](https://github.com/KSithole9/ROAD-SIGN-CLASSIFICATION/assets/152675019/f828710c-0dd3-426b-9625-f20478479152)
+
+
 5. Results 
 
  
@@ -78,12 +92,15 @@ Custom CNN: 91%
 ResNet50: 89% 
 
 A comparison of the accuracies is shown in a bar chart. 
+
 ![image](https://github.com/KSithole9/ROAD-SIGN-CLASSIFICATION/assets/152675019/bb7d7aa5-c15a-4dff-9109-b81ce7f7df2e)
+
 6. Individual Image Prediction 
 
 We demonstrated the capability of the ResNet50 model for individual image prediction. An image of a traffic sign was inputted into the model, and the predicted class label was displayed alongside the image. 
 
 ![image](https://github.com/KSithole9/ROAD-SIGN-CLASSIFICATION/assets/152675019/c471fda0-7cb2-4a4c-b7f8-72e353d69217)
+
 7. Conclusion 
 
 In conclusion, this project showcases the effectiveness of CNNs, both custom and pre-trained models, for traffic sign recognition. Transfer learning with models like ResNet50 and VGG16 enables us to achieve competitive results with minimal training data. These models can be further optimized and deployed in real-world applications to enhance road safety and support intelligent transportation systems. 
